@@ -85,13 +85,15 @@ const Product = () => {
             <div className="content">
                 {loading ? <Loading /> :
                     <>
-                        {product.length ? product.map((item) => {
-                            if (item.price > price[0] && item.price < price[1]) {
-                                return <ProductCard product={item} key={item.id} />
-                            }
-                        }) :
-                            <h2>Product not found !!</h2>
-                        }
+ {product.length ? (
+                product
+                    .filter(item => item.price > price[0] && item.price < price[1])
+                    .map(item => (
+                        <ProductCard product={item} key={item.id} />
+                    ))
+            ) : (
+                <h2>Product not found !!</h2>
+            )}
                     </>
                 }
             </div>
