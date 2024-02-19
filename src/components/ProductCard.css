@@ -1,0 +1,29 @@
+.card {
+    width: 18vmax;
+    padding: 1.3vmax;
+    box-shadow: 1px 2px 10px black;
+    cursor: pointer;
+}
+
+img {
+    width: 18vmax;
+    height: 20vmax;
+    transition: all 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 0.5vmax 0.4vmax;
+    font: 800 1.1vmax black;
+    border-radius: 1.3vmax;
+    background-color: tomato;
+    margin: auto 4vmax;
+    cursor: pointer;
+}
+
+.price{
+    padding: 1vmax;
+}

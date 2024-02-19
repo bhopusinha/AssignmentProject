@@ -1,0 +1,80 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 50vmax;
+    gap: 5vmax;
+    justify-content: center;
+    align-items: center;
+    padding: 5vmax 3vmax;
+}
+
+.link {
+    position: absolute;
+    top: 2vmax;
+    right: 10vmax;
+    text-decoration: none;
+    color: black;
+    font: 600 1.3vmax black;
+}
+
+h1 {
+    width: 22vmax;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: 1vmax auto;
+    padding: 1vmax;
+}
+
+.search {
+    width: 30vmax;
+    margin: 2vmax auto;
+    display: flex;
+    text-align: center;
+}
+
+.search>input:nth-child(1) {
+    width: 20vmax;
+    padding: 0vmax 2.3vmax;
+    outline: none;
+    font: 400 1.3vmax black;
+}
+
+.search>input:nth-child(2) {
+    padding: 0.5vmax;
+    background-color: tomato;
+    cursor: pointer;
+    font: 600 1.3vmax black;
+
+}
+
+.circle>div {
+    width: 7vmax;
+    border-bottom: 2px solid black;
+    border-radius: 50%;
+    height: 8vmax;
+    animation: gola 0.5s infinite linear;
+}
+
+.filterBox {
+    width: 10vmax;
+    position: absolute;
+    top: 10vmax;
+    left: 4vmax;
+}
+
+@keyframes gola {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .filterBox {
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+}
